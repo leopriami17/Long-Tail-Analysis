@@ -1,0 +1,5 @@
+numpy
+pandas
+matplotlib>=3.6
+PyMuPDF
+Pillow

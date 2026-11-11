@@ -1,0 +1,18 @@
+{
+  "same_evaluated_buyers": true,
+  "all_30_item_lists_unique": true,
+  "seen_excluded": true,
+  "fixed_chronological_split": true,
+  "global_top20_matches_independent_audit": true,
+  "all_rows_archived": 601800,
+  "point_checks": 229,
+  "point_mismatches": 15,
+  "bootstrap_quantiles_exact": 10,
+  "bootstrap_quantiles_compatible_mc": 0,
+  "bootstrap_quantiles_different": 0,
+  "original_individual_lists_available_for_full_identity_check": false,
+  "full_output_integrity_verified": true,
+  "per_buyer_rows": 60180,
+  "product_exposure_rows": 151800,
+  "floating_point_bound_tolerance": 1e-12
+}

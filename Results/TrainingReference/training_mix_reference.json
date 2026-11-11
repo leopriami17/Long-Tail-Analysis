@@ -1,0 +1,12 @@
+{
+  "training_rows": 1381836,
+  "validation_rows": 345141,
+  "core_buyers": 4507,
+  "catalog_products": 30360,
+  "evaluated_buyers": 4012,
+  "breaks": [
+    15.197529644268775,
+    35.58833397857788
+  ],
+  "reference": "Mean within-buyer shares of classifiable training purchase rows; same evaluated buyers as Top-20 lists."
+}

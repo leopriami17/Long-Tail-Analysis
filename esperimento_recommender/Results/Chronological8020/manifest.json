@@ -1,0 +1,53 @@
+{
+  "clean_rows": 1726977,
+  "training_rows": 1381836,
+  "validation_rows": 345141,
+  "training_fraction": 0.8001473094314516,
+  "train_max": "2022-04-18",
+  "validation_min": "2022-04-19",
+  "validation_max": "2024-08-15",
+  "core_buyers": 4507,
+  "catalog_products": 30360,
+  "core_pairs": 308854,
+  "evaluated_buyers": 4012,
+  "breaks": [
+    15.197529644268775,
+    35.58833397857788
+  ],
+  "catalog_sha256": "e5b1037e0d46f338e8f5989f4c60a8355a00a60a6f0f3bf2d1bf3ec440ba377f",
+  "buyer_sha256": "c2e8b0d7635687b561ed6071febbbad53a0eff609535b4379e86266a9e8bf7ad",
+  "validation_used_for_tuning": false,
+  "source_sha256": "6efb098a6e01a9acb6e215402a450f4a848ed1b102ca016f9be6c4f03c585e1e",
+  "target_audit": {
+    "training_core_buyers": 4507,
+    "buyers_with_validation": 4378,
+    "buyers_without_validation": 129,
+    "buyers_only_repeats": 12,
+    "buyers_novel_but_no_catalog_target": 354,
+    "evaluated_buyers": 4012
+  },
+  "validation_row_status_training_core": {
+    "known": 74321,
+    "removed_by_core": 92746,
+    "absent_training": 171665
+  },
+  "bootstrap_seed": 42,
+  "bootstrap_replicates": 1000,
+  "bootstrap_model_order": [
+    "BPR-MF",
+    "Category quantity",
+    "Global quantity",
+    "ItemKNN",
+    "NCF"
+  ],
+  "bootstrap_metric_order": [
+    "precision",
+    "recall",
+    "ndcg",
+    "mrr",
+    "hit_rate",
+    "end_to_end_recall"
+  ],
+  "numpy_training_dtype": "float32",
+  "blas_threads": 1
+}

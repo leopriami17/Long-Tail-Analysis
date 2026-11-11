@@ -1,0 +1,74 @@
+{
+  "kind": "NCF",
+  "order": "raw",
+  "dtype": "float32",
+  "layout": "io",
+  "sigmoid": "expit",
+  "square_first": false,
+  "label64": false,
+  "combine_user": false,
+  "state64": false,
+  "gradient_checks": [
+    {
+      "model": "BPR-MF",
+      "maximum_absolute_gradient_error": 5.952843686735099e-11
+    },
+    {
+      "model": "NCF",
+      "maximum_absolute_gradient_error": 1.197980716363678e-10
+    }
+  ],
+  "logs": [
+    {
+      "epoch": 1,
+      "mean_loss": 0.6933173745077609
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.6926778381247853
+    }
+  ],
+  "seconds": 5.792180299758911,
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "seed": 42,
+  "epochs": 2,
+  "learning_rate": 0.001,
+  "batch_size": 4096,
+  "source_sha256": {
+    "fit_latent.py": "32ea4e715244002c8d5e62da73e79681b8f4d6cc0b5a7f647898abe13af38dd9",
+    "latent_numpy.py": "07f5645dd39751c6ee996ac76ba81a961604bd4eb01e8e3e122050a809c5358b"
+  },
+  "parameter_sha256": {
+    "U": "5a127752c36a6252d9dc7680df8832242025c72cb492a7cbade0158b48c958be",
+    "V": "520dcbd712cf5f31c263fa5438107c3f0b8e9c76775d73a9fdbcf17fc48379fb",
+    "W0": "fcf15cef052a5f513cba3d3c0537c9c6d623aba9568de242bdcd5a9aaf68e65c",
+    "b0": "e45c1aa6a73ce891087421fd2cb7e563d729b1a0f7de5f7eeb03a46e95841bf2",
+    "W1": "442aee0216c6d0c7648a97a60025fbf2a6e2923427ba9df4eaab4ce7f7246524",
+    "b1": "d9419812df01bea24fd026de615ff1ea5b48f89d98060505ab7c0515d10f5538",
+    "W2": "6a69431b58098552d63f59cf873c20a0d7dab78777d18e2407f126f61cc80e4a",
+    "b2": "eb91a0d01a99fff8030fa2c50c47b5ec1980883eec31e95ef0a66dc094aebba0"
+  }
+}

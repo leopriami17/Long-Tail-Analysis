@@ -1,0 +1,68 @@
+{
+  "kind": "BPR-MF",
+  "order": "raw",
+  "dtype": "float32",
+  "layout": "io",
+  "sigmoid": "expit",
+  "square_first": false,
+  "label64": false,
+  "combine_user": false,
+  "state64": false,
+  "gradient_checks": [
+    {
+      "model": "BPR-MF",
+      "maximum_absolute_gradient_error": 5.952843686735099e-11
+    },
+    {
+      "model": "NCF",
+      "maximum_absolute_gradient_error": 1.197980716363678e-10
+    }
+  ],
+  "logs": [
+    {
+      "epoch": 1,
+      "mean_loss": 0.693178558328844
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.6917921248779137
+    }
+  ],
+  "seconds": 3.8755648136138916,
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "seed": 42,
+  "epochs": 2,
+  "learning_rate": 0.001,
+  "batch_size": 4096,
+  "source_sha256": {
+    "fit_latent.py": "32ea4e715244002c8d5e62da73e79681b8f4d6cc0b5a7f647898abe13af38dd9",
+    "latent_numpy.py": "07f5645dd39751c6ee996ac76ba81a961604bd4eb01e8e3e122050a809c5358b"
+  },
+  "parameter_sha256": {
+    "U": "bf80a343c5797ceb5123588330404f265755cc8bbc2240589edf66dc0b137879",
+    "V": "f1cbe0cf2c02ad1eb9ced135bb379ee9d1d7a5f7c61e2570accf5c77b0126366"
+  }
+}
